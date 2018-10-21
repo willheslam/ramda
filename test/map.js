@@ -36,9 +36,9 @@ describe('map', function() {
     var g = async function(b) { return b * 2; };
     var h = R.map(f, g);
     return h(10)
-    .then(h => {
-      eq(h, (10 * 2) - 1);
-    });
+      .then(h => {
+        eq(h, (10 * 2) - 1);
+      });
   });
 
   it('interprets generator as a functor', function() {
